@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./angular.min.js"></script>
+</head>
+
+<body ng-app>
+    <div>
+        <label for="">Enter the 1st no.:</label>
+        <input type="number" ng-model="first_no">
+        <br><br>
+
+        <label for="">Enter the 2nd no.:</label>
+        <input type="number" ng-model="second_no">
+        <br><br>
+
+        <button onclick="myFunction()">Click</button>
+
+        <p id="demo"></p>
+        <p>{{first_no}} - {{second_no}} = {{first_no - second_no}}</p>
+        <p>{{first_no}} * {{second_no}} = {{first_no * second_no}}</p>
+        <p>{{first_no}} / {{second_no}} = {{first_no / second_no}}</p>
+        <p>{{first_no}} % {{second_no}} = {{first_no % second_no}}</p>
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "{{first_no}} + {{second_no}} = {{first_no + second_no}}";
+        }
+    </script>
+</body>
+</html>

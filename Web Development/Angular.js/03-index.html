@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./angular.min.js"></script>
+</head>
+
+<body ng-app>
+    <div
+        style="text-align: center; margin-top: 100px !important; border: 1px solid black; margin: 540px; padding: 20px;">
+        <label for="">Name:</label>
+        <input type="text" ng-model="name">
+        <br><br>
+
+        <label for="">Mob. No.:</label>
+        <input type="number" ng-model="mob_no">
+        <br><br>
+
+        <label for="">Gender:</label>
+        <input type="checkbox" name="" id="" ng-model="gender">
+        <br><br>
+
+        <p>{{name}}</p>
+        <p>{{mob_no}}</p>
+        <p>{{gender}}</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./angular.min.js"></script>
+</head>
+
+<body ng-app>
+    <div
+        style="text-align: center; margin-top: 100px !important; border: 1px solid black; margin: 540px; padding: 20px;">
+        <label for="">First Name:</label>
+        <input type="text" ng-model="first_name">
+        <br><br>
+
+        <label for="">Last Name:</label>
+        <input type="text" ng-model="last_name">
+        <br><br>
+
+        <label for="">Mob. No.:</label>
+        <input type="number" ng-model="mob_no">
+        <br><br>
+
+        <p>{{first_name}}</p>
+        <p>{{last_name}}</p>
+        <p>{{mob_no}}</p>
+    </div>
+</body>
+
+</html>
