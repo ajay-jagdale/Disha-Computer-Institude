@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>if-else statement</h1>
+    <h2>Applicant is eligible or not. / Odd or Even</h2>
+    <br>
+    <script>
+        // Find the no. is +ve or not.
+        document.write('<h3>Find the no. is +ve or not.</h3>');
+
+        a = -20;
+        if (a > 0) {
+            document.write("given no is +ve");
+        }
+        else {
+            document.write("given no is -ve");
+        }
+
+        document.write("<br><br>--------------------------------------------<br><br>");
+
+
+
+        // Find the no. is even or odd.
+        document.write('<h3>Find the no. is even or odd.</h3>');
+
+        num = 51;
+        if (num % 2==0) {
+            document.write(num, " is even.");
+        }
+        else {
+            document.write(num, " is odd.");
+        }
+
+        document.write("<br><br>--------------------------------------------<br><br>");
+
+
+
+        // Applicant is eligible or not.
+        function check() {
+            age = document.getElementById('age').value;
+            if (age >= 18) {
+                document.write('Applicant is eligible.');
+            }
+            else {
+                document.write('Applicant is not eligible.');
+            }
+        }
+    </script>
+
+
+    <h3>Eligible or not for licence.</h3>
+    <h4>Enter your age: </h4>
+    <input type="number" id="age">
+    <button onclick="check()">Submit</button>
+</body>
+
+</html>

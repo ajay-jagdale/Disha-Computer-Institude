@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>if, else if, else statement</h1>
+    <h2>Marks - Pass/Fail</h2>
+
+    Enter your marks: <input type="number" id="get">
+    <button onclick="display()">Submit</button>
+    <p id="get2"></p>
+
+    <script>
+        function display() {
+            var marks = document.getElementById('get').value;
+
+            if (marks >= 75 && marks < 100) {
+                document.getElementById('get2').innerHTML = "1st Class";
+            }
+            else if (marks >= 65 && marks < 75) {
+                document.getElementById('get2').innerHTML = "2nd Class";
+            }
+            else if (marks >= 55 && marks < 65) {
+                document.getElementById('get2').innerHTML = "3rd Class";
+            }
+            else if (marks >= 45 && marks < 55) {
+                document.getElementById('get2').innerHTML = "Pass";
+            }
+            else {
+                document.getElementById('get2').innerHTML = "Fail";
+            }
+        }
+    </script>
+</body>
+
+</html>

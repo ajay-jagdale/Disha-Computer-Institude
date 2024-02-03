@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>if, else if, else statement</h1>
+    <h2>Salary Checking</h2>
+    <br>
+
+    Enter salary: <input type="number" id="get">
+    <button onclick="display()">Check</button>
+    <p id="get2"></p>
+
+    <script>
+        function display() {
+            salary = document.getElementById('get').value;
+
+            if (salary >= 10000 && salary <= 20000) {
+                document.getElementById('get2').innerHTML = "Employer";
+            }
+            else if (salary >= 25000 && salary <= 40000) {
+                document.getElementById('get2').innerHTML = "HR";
+            }
+            else if (salary >= 50000 && salary <= 70000) {
+                document.getElementById('get2').innerHTML = "CEO";
+            }
+            else if (salary >= 70000 && salary <= 90000) {
+                document.getElementById('get2').innerHTML = "Manager";
+            }
+            else {
+                document.getElementById('get2').innerHTML = "No any one.";
+            }
+        }
+    </script>
+</body>
+
+</html>

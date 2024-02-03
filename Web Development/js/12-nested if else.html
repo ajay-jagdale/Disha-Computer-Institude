@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Enter mob. no.: <input type="tel" maxlength="10" id="mob"><br><br>
+    Password: <input type="password" id="pass"><br><br>
+    UPI PIN: <input type="password" id="upi"><br><br>
+    <button onclick="trans()">Submit</button><br><br>
+    <p id="get"></p>
+
+
+    <script>
+        function trans() {
+            var mob = document.getElementById('mob').value;
+            var pass = document.getElementById('pass').value;
+            var upi = document.getElementById('upi').value;
+
+            if (mob === '9876543210') {
+                if (pass === '1234') {
+                    if (upi === '2345') {
+                        document.getElementById('get').innerHTML = "Transaction Successfully.";
+                    }
+                    else {
+                        document.getElementById('get').innerHTML = "Incorrect UPI. PIN!";
+                    }
+                }
+                else {
+                    document.getElementById('get').innerHTML = "Incorrect Password!";
+                }
+            }
+            else {
+                document.getElementById('get').innerHTML = "Incorrect mob. no!";
+            }
+        }
+    </script>
+</body>
+
+</html>

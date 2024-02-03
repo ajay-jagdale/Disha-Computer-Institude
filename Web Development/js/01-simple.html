@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">Welcome in HTML</p>
+    <button onclick="get()">click</button>
+
+    <h1 id="h1">Hello World!</h1>
+    <button onclick="get1()">click</button>
+
+
+
+    <script>
+        document.write("Hello js");
+
+        alert("Welcome in js");
+
+        function get() {
+            document.getElementById('p1').innerHTML = "js is script part of client side.";
+        }
+
+
+        function get1() {
+            document.getElementById('h1').innerHTML = "Hello World! Welcome in India.";
+        }
+    </script>
+</body>
+
+</html>
