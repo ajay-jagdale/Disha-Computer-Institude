@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./angular.min.js"></script>
+</head>
+
+<body ng-app>
+    <div
+        ng-init="countries=[{locate: 'IND', name: 'India'},  {locate: 'US', name: 'United States'},  {locate: 'UK', name: 'United Kingdom'}]">
+        Enter your name: <input type="text" ng-model="name">
+        <p>Hello <span ng-bind="name"></span>!</p>
+        <p>List of countries with locate:</p>
+        <ol>
+            <li ng-repeat="country in countries">
+                Country: {{country.name}}, Locate: {{country.locate}}
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

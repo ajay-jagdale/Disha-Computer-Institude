@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./angular.min.js"></script>
+</head>
+
+<body ng-app="my-app">
+    <div ng-controller="HelloController">
+        <h2>Welcome to in this {{hello.Title}}</h2>
+    </div>
+
+    <script>
+        angular.module("my-app", [])
+            .controller("HelloController", function ($scope) {
+                $scope.hello = {};
+                $scope.hello.Title = "world!";
+            })
+    </script>
+</body>
+
+</html>
